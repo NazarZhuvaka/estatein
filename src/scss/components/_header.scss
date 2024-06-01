@@ -60,45 +60,6 @@
 			display: none;
 		}
 	}
-
-	// &__ul {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	gap: 6px;
-	// 	z-index: 9;
-
-	// 	@include tablet {
-	// 		z-index: 9;
-	// 		position: fixed;
-	// 		width: 70%;
-	// 		height: 100%;
-	// 		flex-direction: column;
-	// 		left: 0;
-	// 		top: 0;
-	// 		background: var(--c-primary);
-	// 		align-items: center;
-	// 		justify-content: center;
-	// 		transform: translateX(-120%);
-	// 		transition: var(--transition);
-	// 	}
-
-	// 	&._active {
-	// 		transform: translateX(0);
-	// 	}
-
-	// 	.icon-close {
-	// 		position: absolute;
-	// 		top: 40px;
-	// 		right: 40px;
-	// 		color: var(--c-text-white);
-	// 	}
-	// }
-
-	// &__a {
-	// 	@include tablet {
-	// 		color: var(--c-text-white);
-	// 	}
-	// }
 }
 
 .icon-menu,
@@ -117,9 +78,9 @@
 
 	@include tablet {
 		display: flex;
-	align-items: center;
-	gap: 30px;
-	z-index: 9;
+		align-items: center;
+		gap: 30px;
+		z-index: 9;
 
 		z-index: 9;
 		position: fixed;

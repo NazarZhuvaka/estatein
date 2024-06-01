@@ -48,17 +48,14 @@
     }
 
     &__close{
-        // grid-column-start: none;
         width: 32px;
         height: 32px;
         padding: 10px;
-        // margin-right: 32px;
         border-radius: 50%;
         background: darken( $c-grey , 80%);
         cursor: pointer;
         z-index: 3;
 
-        // display: flex;
         justify-self: end;
     }
 }
