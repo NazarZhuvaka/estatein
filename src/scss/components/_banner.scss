@@ -1,18 +1,45 @@
 .banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 18px 0;
-    background-image: url("./../img/banner-bg.png");
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 1.1fr 4fr 1fr;
+    max-width: 1920px;
 
+    align-items: center;
+
+    width: 100%;
+    padding: 15px 0;
+    padding-right: clamp(0.938rem, -0.044rem + 1.7vw, 2rem);
 	border-bottom: 1px solid var(--c-border);
 
     position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./../img/banner-bg.png'); 
+        background-size: cover; 
+        background-position: center; 
+        opacity: 0.5; 
+    }
+
+    @include tablet-small{
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 
     &__text {
+        z-index: 3;
+    }
+
+    &-info{
+        display: flex;
+        justify-content: center;
+        grid-column-start: 2;
     }
 
     &__a {
@@ -21,17 +48,17 @@
     }
 
     &__close{
-        display: flex;
-        justify-content: center;
+        // grid-column-start: none;
         width: 32px;
         height: 32px;
-        border-radius: 50%;
-        position: absolute;
         padding: 10px;
-        top: 25%;
-        right: 32px;
-        cursor: pointer;
-
+        // margin-right: 32px;
+        border-radius: 50%;
         background: darken( $c-grey , 80%);
+        cursor: pointer;
+        z-index: 3;
+
+        // display: flex;
+        justify-self: end;
     }
 }
