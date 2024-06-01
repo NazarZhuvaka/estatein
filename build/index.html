@@ -8,35 +8,67 @@
 	<title>Gulp Starter Project my LemonSchool</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
 	<header class="header">
-	<div class="header__logo">Start</div>
-	<div class="header__nav">
-		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
-		<ul class="header__ul" id="headerUl">
-			<li class="header__li"><a class="header__a" href="/">Link 1</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 2</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 3</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 4</a></li>
-			<span class="material-icons icon-close" onclick="navToggle()">close</span>
-		</ul>
-		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-	</div>
+  <section class="banner">
+    <div>
+        <p class="banner__text">
+            ✨Discover Your Dream Property with Estatein
+            <a class="banner__a" href="#!">
+                Learn More
+            </a>
+        </p>
+    </div>
+
+    <button class="banner__close">
+        <img src="./../../img/svg/close.svg" alt="close">
+    </button>
+</section>
+
+  <div class="container header__container">
+    <a class="header__logo" href="/">
+		<img width="160px" height="48px" src="./../../img/svg/header-logo.svg" alt="header__logo">
+	</a>
+    <div class="header__nav">
+      <div
+        class="header__backdrop"
+        id="headerBackdrop"
+        onclick="navToggle()"
+      ></div>
+      <ul class="header__ul" id="headerUl">
+        <li class="header__li"><button class="btn header__a header__tab-control header__tab-control--active" data-tab="homePage" href="/">Home</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="aboutPage" href="/">About Us</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="propertiesPage" href="/">Properties</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="servicesPage" href="/">Services</button></li>
+        <span class="material-icons icon-close" onclick="navToggle()"
+          >close</span
+        >
+      </ul>
+      <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+    </div>
+	<button class="btn btn_primary header__btn">
+	  Contact Us
+	</button>
+  </div>
 </header>
 
-	<main class="main">
+	<main class="main"  data-tab-value="homePage" >
 		<div class="template">
 			<div>Website</div>
 			<img src="./img/web.jpg" alt="">
 		</div>
 	</main>
 	<footer class="footer">
-	<div>Footer</div>
+	<p>Footer</p>
 </footer>
 
 	<script src="./js/index.bundle.js"></script>

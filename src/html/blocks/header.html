@@ -1,14 +1,29 @@
 <header class="header">
-	<div class="header__logo">Start</div>
-	<div class="header__nav">
-		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
-		<ul class="header__ul" id="headerUl">
-			<li class="header__li"><a class="header__a" href="/">Link 1</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 2</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 3</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 4</a></li>
-			<span class="material-icons icon-close" onclick="navToggle()">close</span>
-		</ul>
-		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-	</div>
+  @@include('banner.html')
+
+  <div class="container header__container">
+    <a class="header__logo" href="/">
+		<img width="160px" height="48px" src="./../../img/svg/header-logo.svg" alt="header__logo">
+	</a>
+    <div class="header__nav">
+      <div
+        class="header__backdrop"
+        id="headerBackdrop"
+        onclick="navToggle()"
+      ></div>
+      <ul class="header__ul" id="headerUl">
+        <li class="header__li"><button class="btn header__a header__tab-control header__tab-control--active" data-tab="homePage" href="/">Home</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="aboutPage" href="/">About Us</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="propertiesPage" href="/">Properties</button></li>
+        <li class="header__li"><button class="btn header__a header__tab-control" data-tab="servicesPage" href="/">Services</button></li>
+        <span class="material-icons icon-close" onclick="navToggle()"
+          >close</span
+        >
+      </ul>
+      <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+    </div>
+	<button class="btn btn_primary header__btn">
+	  Contact Us
+	</button>
+  </div>
 </header>

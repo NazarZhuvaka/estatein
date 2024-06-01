@@ -4,11 +4,20 @@ $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
+$c-primary: #703BF7;
+$c-body: #141414;
+$c-grey: #FFFFFF;
+
+
 :root {
-	--ff: 'Poppins', sans-serif;
+	--ff: "Urbanist", sans-serif;
 	--transition: .2s all ease-in-out;
 
-	--c-primary: #0b8fed;
-	--c-text-white: #fff;
-	--c-border: #eee;
+	--c-body: #141414;
+	--c-grey10: #1A1A1A;
+
+	--c-text-white: #FFFFFF;
+	--c-primary: #703BF7;
+
+	--c-border: #262626;
 }
