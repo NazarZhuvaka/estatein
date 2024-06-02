@@ -1,0 +1,106 @@
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    max-width: calc(1920px + 30px);
+
+    padding-left: 30px;
+
+    margin-inline: auto;
+
+    // &__container {
+    // }
+
+    &__links{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+
+    }
+    &__btn{
+        padding: 18px 24px;
+        font-size:  clamp(0.875rem, 0.78rem + 0.25vw, 1.125rem);
+
+        &--active{
+            background-color: var(--c-primary);
+            &:hover {
+                background: darken($c-primary, 10%);
+            }
+        }
+    }
+
+    &__info {
+        justify-self: end;
+    }
+
+    &__info-title {
+        max-width: 758px;
+        font-size: clamp(1.75rem, 1.08rem + 2vw, 3.75rem);
+        line-height: 120%;
+        font-weight: 600;
+
+        margin-bottom: clamp(1rem, 0.874rem + 0.63vw, 1.5rem);
+    }
+
+    &__info-text {
+        font-size: clamp(0.875rem, 0.78rem + 0.25vw, 1.125rem);
+        max-width: 758px;
+
+        line-height: 150%;
+        color: var(--c-text-grey);
+
+        margin-bottom: clamp(2.5rem, 2.185rem + 1.57vw, 3.75rem);
+
+
+    }
+
+    &__img {
+	    background-color: var(--c-grey10);
+        background-image: url('./../img/welcome-img-bg.png'); 
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+
+    &__subs {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+        margin-top: 60px;
+
+        max-width: 758px;
+    }
+
+    &__subs-item {
+        max-width: 240px;
+        width: 100%;
+        padding: 16px 24px;
+        border-radius: 5px;
+        border: 2px solid var(--c-border);
+        background-color: var(--c-grey10);
+        @include laptop {
+            padding: 14px 20px;
+        }
+    }
+
+    .subs-item {
+
+        &__count {
+            font-size: clamp(1.5rem, 1rem + 1vw, 2.5rem);
+            font-weight: 800;
+            line-height: 150%;
+            margin-bottom: 2px;
+        }
+
+        &__text {
+            color: var(--c-text-grey);
+            font-size: clamp(0.875rem, 0.78rem + 0.25vw, 1.125rem);
+        }
+    }
+
+}

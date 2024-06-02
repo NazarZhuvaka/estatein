@@ -1,4 +1,9 @@
 // MEDIA QUERIES
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
 @mixin desktop-small {
   @media (max-width: $desktop-small) {
     @content;

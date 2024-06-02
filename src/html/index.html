@@ -19,12 +19,14 @@
 
 <body>
 	@@include('blocks/header.html')
-	<main class="main"  data-tab-value="homePage" >
-		<div class="template">
+	<section class="homePage"  data-tab-value="homePage" >
+		<!-- <div class="template">
 			<div>Website</div>
 			<img src="./img/web.jpg" alt="">
-		</div>
-	</main>
+		</div> -->
+	@@include('blocks/welcome.html')
+
+	</section>
 	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
 	<script>
