@@ -2,15 +2,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 80px;
+    gap: clamp(3.125rem, 2.321rem + 2.23vw, 5rem);
     max-width: calc(1920px + 30px);
 
     padding-left: 30px;
 
     margin-inline: auto;
 
-    // &__container {
-    // }
+    @include tablet-small {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 16px;
+    }
 
     &__links{
         display: flex;
@@ -18,10 +21,20 @@
         align-items: center;
         gap: 20px;
 
+        @include tablet-small {
+            
+            flex-direction: column;
+        }
+
     }
     &__btn{
         padding: 18px 24px;
         font-size:  clamp(0.875rem, 0.78rem + 0.25vw, 1.125rem);
+
+        @include tablet-small {
+            width: 100%;
+            text-align: center;
+        }
 
         &--active{
             background-color: var(--c-primary);
@@ -60,8 +73,19 @@
 	    background-color: var(--c-grey10);
         background-image: url('./../img/welcome-img-bg.png'); 
 
+        @include tablet-small {
+            border-radius: 15px;
+            border: 1px solid var(--c-border);
+            
+        }
         img {
+            height: clamp(25.625rem, 7.743rem + 35.94vw, 50.875rem);
             object-fit: cover;
+
+            @include tablet-small {
+                border-radius: 15px;
+                height: unset;
+            }
         }
     }
 
@@ -71,9 +95,10 @@
         flex-wrap: nowrap;
         align-items: center;
         gap: 20px;
-        margin-top: 60px;
+        margin-top: clamp(2.5rem, 2.185rem + 1.57vw, 3.75rem);
 
         max-width: 758px;
+
     }
 
     &__subs-item {
