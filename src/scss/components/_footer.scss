@@ -5,10 +5,21 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablet-small {
+			flex-direction: column-reverse;
+			gap: 20px;
+		}
 	}
 	&__policy {
-		&-terms{
-			margin-left: 32px;
+		display: flex;
+		gap: 32px;
+
+		@include tablet-small {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			gap: 10px;
 		}
 	}
 
