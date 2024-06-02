@@ -48,14 +48,32 @@
     }
 
     &__close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         width: 32px;
         height: 32px;
         padding: 10px;
         border-radius: 50%;
         background: darken( $c-grey , 80%);
-        cursor: pointer;
         z-index: 3;
-
         justify-self: end;
+        
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover{
+            background-color: var(--c-text-white);
+
+            .banner__close-svg {
+                path{
+                    stroke: var(--c-body); 
+                }
+            } 
+        }
     }
 }
+
+
+

@@ -1,3 +1,33 @@
 .footer {
-	padding: 20px;
+	padding: 26px 0;
+	background-color: var(--c-grey10);
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__policy {
+		&-terms{
+			margin-left: 32px;
+		}
+	}
+
+	&__nav-media {
+		display: flex;
+		align-items: center;
+		gap: clamp(0.5rem, -0.7rem + 1.33vw, 0.625rem);
+	}
 }
+.nav-media {
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 52px;
+		height: 52px;
+		border-radius: 50%;
+		background-color: var(--c-body);
+	}
+}
+

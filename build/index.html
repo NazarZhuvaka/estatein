@@ -30,7 +30,9 @@
     </div>
 
     <button class="banner__close">
-        <img src="./../../img/svg/close.svg" alt="close">
+        <svg class="banner__close-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </button>
 </section>
 
@@ -148,7 +150,6 @@
 			<img src="./img/web.jpg" alt="">
 		</div> -->
 	<section class="welcome">
-    <!-- <div class="welcome__container"> -->
         <div class="welcome__info">
             <h1 class="welcome__info-title">
                 Discover Your Dream Property with Estatein
@@ -178,13 +179,32 @@
         <div class="welcome__img">
             <img width="935px"  src="./../../img/welcome-img.png" alt="welcome-img">
         </div>
-        <!-- width="935px" height="814px" -->
-    <!-- </div> -->
 </section>
 
 	</section>
 	<footer class="footer">
-	<p>Footer</p>
+	<div class="container footer__container">
+		<p class="footer__policy">
+			@
+			<span id="year-clock"></span>
+			Estatein. All Rights Reserved.
+			<a class="footer__policy-terms" href="@!Terms">Terms & Conditions</a>
+		</p>
+		<ul class="footer__nav-media">
+			<a class="nav-media__item" href="#!facebook">
+				<img src="./../../img/svg/facebook.svg" alt="facebook">
+			</a>
+			<a class="nav-media__item" href="#!linkedin">
+				<img src="./../../img/svg/linkedin.svg" alt="linkedin">
+			</a>
+			<a class="nav-media__item" href="#!twitter">
+				<img src="./../../img/svg/twitter.svg" alt="twitter">
+			</a>
+			<a class="nav-media__item" href="#!youtube">
+				<img src="./../../img/svg/youtube.svg" alt="youtube">
+			</a>
+		</ul>
+	</div>
 </footer>
 
 	<script src="./js/index.bundle.js"></script>

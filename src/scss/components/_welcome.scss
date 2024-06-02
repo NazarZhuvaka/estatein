@@ -36,10 +36,15 @@
             text-align: center;
         }
 
+        &:hover {
+            color: var(--c-text-white) !important;
+        }
+
         &--active{
             background-color: var(--c-primary);
             &:hover {
                 background: darken($c-primary, 10%);
+                color: var(--c-text-white) !important;
             }
         }
     }
