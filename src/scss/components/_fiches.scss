@@ -1,0 +1,28 @@
+.fiches {
+    max-width: 1920px;
+
+    padding: 10px;
+    background-color: var(--c-grey10);
+
+    margin-inline: auto;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        // display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        // gap: 20px;
+        padding: 20px;
+        background-color: var(--c-body);
+    }
+
+    &__item {
+        text-align: center;
+        background-color: var(--c-grey10);
+    }
+
+    &__item-desc {
+    }
+}

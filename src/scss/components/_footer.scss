@@ -39,6 +39,15 @@
 		height: 52px;
 		border-radius: 50%;
 		background-color: var(--c-body);
+		transition: var(--transition);
+		&:hover{
+			background: var(--c-text-white);
+			.nav-media__item-svg{
+				path {
+                    fill: var(--c-primary); 
+				}
+			}
+		}
 	}
 }
 
