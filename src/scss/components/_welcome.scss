@@ -50,6 +50,7 @@
 
     &__info {
         justify-self: end;
+        padding-bottom: 15px;
     }
 
     &__info-title {
@@ -74,6 +75,8 @@
     }
 
     &__img {
+        // //////////////////////////////////////////
+        height: 100%;
 	    background-color: var(--c-grey10);
         background-image: url('./../img/welcome-img-bg.png'); 
 
@@ -95,13 +98,29 @@
 
 
     &__subs {
-        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        // display: flex;
         flex-wrap: nowrap;
         align-items: center;
         gap: clamp(0.75rem, 0.466rem + 0.79vw, 1.25rem);
         margin-top: clamp(2.5rem, 2.185rem + 1.57vw, 3.75rem);
 
         max-width: 758px;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            max-width: unset;
+            text-align: center;
+        }
+
+        &-container{
+            display: flex;
+            width: 100%;
+            gap: clamp(0.75rem, 0.466rem + 0.79vw, 1.25rem);
+            
+        }
 
     }
 
@@ -114,6 +133,11 @@
         background-color: var(--c-grey10);
         @include laptop {
             padding: 14px clamp(1rem, 0.833rem + 0.46vw, 1.25rem);
+        }
+
+        @include mobile{
+            max-width: unset;
+
         }
     }
 

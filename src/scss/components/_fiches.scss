@@ -47,6 +47,10 @@
             max-height: clamp(9.375rem, 5.8rem + 5.5vw, 10.75rem);
         }
 
+        @include mobile {
+            min-height: 144px;
+        }
+
 
         img {
             height: clamp(3.75rem, 2.969rem + 2.17vw, 5.125rem);
@@ -67,7 +71,7 @@
     }
 
     &__item-desc {
-        margin-top: 20px;
+        margin-top: clamp(0.875rem, 0.717rem + 0.44vw, 1.25rem);
         font-size: clamp(0.875rem, 0.768rem + 0.3vw, 1.125rem);
     }
 }
