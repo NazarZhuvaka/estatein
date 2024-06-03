@@ -98,7 +98,7 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 20px;
+        gap: clamp(0.75rem, 0.466rem + 0.79vw, 1.25rem);
         margin-top: clamp(2.5rem, 2.185rem + 1.57vw, 3.75rem);
 
         max-width: 758px;
@@ -113,7 +113,7 @@
         border: 2px solid var(--c-border);
         background-color: var(--c-grey10);
         @include laptop {
-            padding: 14px 20px;
+            padding: 14px clamp(1rem, 0.833rem + 0.46vw, 1.25rem);
         }
     }
 
