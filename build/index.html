@@ -8,10 +8,10 @@
 	<title>Gulp Starter Project my LemonSchool</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="icon" type="image/ico" href="./../img/main-icon.ico">
@@ -229,9 +229,22 @@
 </section>
 			<section class="feature">
     <div class="container feature__container">
-        
+        <div class="feature__info">
+            <div class="feature__info-container">
+                <h2 class="feature__info-title">Featured Properties</h2>
+                <p class="feature__info-desc">
+                    Explore our handpicked selection of featured properties. Each listing offers 
+                    a glimpse into exceptional homes and investments available
+                    through Estatein. Click "View Details" for more
+                    information.
+                </p>
+            </div>
+            <a class="btn btn_primary feature__info-btn" href="#!">View All Properties</a>
+        </div>
     </div>
 </section>
+
+
 			<section class="journey">
     <div class="container journey__container">
         <div class="journey__info">
@@ -293,6 +306,7 @@
 			document.getElementById("headerBackdrop").classList.toggle("_active");
 		}
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
