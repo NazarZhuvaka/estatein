@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    position: relative;
     gap: clamp(3.125rem, 2.321rem + 2.23vw, 5rem);
     max-width: calc(1920px + 30px);
 
@@ -11,6 +12,7 @@
     @include tablet-small {
         display: flex;
         flex-direction: column-reverse;
+        position: unset;
         padding: 40px 16px;
     }
 
@@ -54,7 +56,7 @@
     }
 
     &__info-title {
-        max-width: 758px;
+        max-width: 725px;
         font-size: clamp(1.75rem, 1.08rem + 2vw, 3.75rem);
         line-height: 120%;
         font-weight: 600;
@@ -75,17 +77,20 @@
     }
 
     &__img {
+        // position: relative;
         // //////////////////////////////////////////
         height: 100%;
 	    background-color: var(--c-grey10);
         background-image: url('./../img/welcome-img-bg.png'); 
 
         @include tablet-small {
+            position: relative;
             border-radius: 15px;
             border: 1px solid var(--c-border);
             
         }
-        img {
+
+        &-photo {
             height: clamp(25.625rem, 7.743rem + 35.94vw, 50.875rem);
             object-fit: cover;
 
@@ -141,6 +146,21 @@
         }
     }
 
+    &__circule-link{
+        position: absolute;
+
+        left: 48%;
+        top: 17%;
+
+        height: clamp(7.313rem, 1.299rem + 9.7vw, 10.938rem);
+
+        @include tablet-small{
+            top: unset;
+            left: 0;
+            bottom: -38px;
+        }
+    }
+
     .subs-item {
 
         &__count {
@@ -157,3 +177,4 @@
     }
 
 }
+
