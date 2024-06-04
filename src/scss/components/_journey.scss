@@ -1,22 +1,28 @@
 .journey {
-    max-width: 1950px;
+    max-width: calc(1920px + 30px );
     margin-inline:auto ;
     border-top: 1px solid var(--c-border);
     border-bottom: 1px solid var(--c-border);
 
     background-image: url(./../../img/bg-journey.png);
     background-repeat: no-repeat;
-    
+    background-position: center;
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding: 100px 20px;
+        gap: 25px;
+
+        padding: clamp(3.125rem, 2.328rem + 3.27vw, 6.25rem) 20px;
+
+        @include tablet-small {
+            flex-direction: column;
+        }
     }
 
-    &__info {
-    }
+    // &__info {
+    // }
 
     &__info-title {
         font-size: clamp(1.75rem, 1.431rem + 1.31vw, 3rem);
@@ -28,6 +34,18 @@
         max-width: 1130px;
         font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
         color: var(--c-text-grey);
+    }
+
+    &__btn{
+        font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
+        @include laptop {
+            padding: 14px 20px;
+        }
+
+        @include tablet-small {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
