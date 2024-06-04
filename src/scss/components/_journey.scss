@@ -1,0 +1,33 @@
+.journey {
+    max-width: 1950px;
+    margin-inline:auto ;
+    border-top: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+
+    background-image: url(./../../img/bg-journey.png);
+    background-repeat: no-repeat;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 100px 20px;
+    }
+
+    &__info {
+    }
+
+    &__info-title {
+        font-size: clamp(1.75rem, 1.431rem + 1.31vw, 3rem);
+        font-weight: 600;
+        margin-bottom: clamp(0.375rem, 0.248rem + 0.52vw, 0.875rem);
+    }
+
+    &__info-text {
+        max-width: 1130px;
+        font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
+        color: var(--c-text-grey);
+    }
+}
+
