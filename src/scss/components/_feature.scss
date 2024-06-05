@@ -54,6 +54,11 @@ background-color: wheat;
     display: flex;
     justify-content: space-between;
 
+    margin-top: clamp(1.875rem, 1.556rem + 1.31vw, 3.125rem);
+    padding-top: 20px;
+
+    border-top: 1px solid var(--c-border);
+
     &__pagination {
         display: flex;
         gap: 10px;
