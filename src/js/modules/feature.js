@@ -4,12 +4,16 @@ import 'swiper/css/bundle';
 
 function feature() {
   // <-----------Arow Swiper----------->
+
   const pagBtn = document.querySelectorAll('.controls__pagination-btn')
-  for (let btn of pagBtn) {
-    btn.addEventListener("click", function () {
-      // btn.classList.add('active')
+
+  pagBtn.forEach(button => {
+    button.addEventListener('click', () => {
+        pagBtn.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
     });
-  }
+});
+
   //<-------------Swiper--------------->
   const swiper = new Swiper('.swiper', {
     loop: true,
