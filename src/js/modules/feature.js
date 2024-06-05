@@ -17,9 +17,32 @@ function feature() {
   //<-------------Swiper--------------->
   const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
-    speed: 200,
+    speed: 400,
+
+    // breakpoints: {
+    //   578: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 22,
+    //   },
+    //   600: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 22,
+    //   },
+    //   768: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 22,
+    //   },
+    //   1230: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 32,
+    //   },
+    //   1440: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 42,
+    //   },
+    // },
   
     pagination: {
       el: '.slider-controls__count',
@@ -41,6 +64,7 @@ function feature() {
       el: '.swiper-scrollbar',
     },
   });
+
 }
 
 export default feature;
