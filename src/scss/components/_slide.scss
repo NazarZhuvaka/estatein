@@ -1,0 +1,71 @@
+.swiper-slide {
+    padding: 40px;
+    border: 1px solid var(--c-border);
+    border-radius: 12px;
+    // background-color: wheat;
+}
+.slide-img{
+    border-radius: 10px;
+    margin-bottom: clamp(1rem, 0.777rem + 0.92vw, 1.875rem);
+}
+
+.slide-info {
+
+		&__title {
+		}
+
+		&__desc {
+		}
+
+		&__room {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+		}
+
+		&__room-item {
+            font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
+            margin-top: clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem);
+            padding: 8px 14px;
+            border: 1px solid var(--c-border);
+            border-radius: 28px;
+            background-color: var(--c-grey10);
+
+            img {
+                margin-right: 5px;
+            }
+		}
+
+		&__footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem);
+
+		}
+}
+.footer-price {
+}
+.footer-price-title {
+    color: var(--c-text-grey);
+    font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
+}
+.card {
+
+		&__value {
+            color: var(--c-text-white);
+            font-size: clamp(1.125rem, 1.029rem + 0.39vw, 1.5rem);
+            font-weight: 600;
+            margin-top: 2px;
+		}
+}
+.btn {
+}
+.btn--active {
+}
+.slide-footer {
+
+		&__btn {
+            font-size: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem);
+            padding: clamp(0.875rem, 0.811rem + 0.26vw, 1.125rem) clamp(2.188rem, 1.885rem + 1.24vw, 3.375rem);
+		}
+}
