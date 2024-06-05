@@ -1,0 +1,80 @@
+.feature {
+
+    &__container {
+    }
+
+    &__info {
+    }
+
+    &__info-container {
+    }
+
+    &__info-title {
+    }
+
+    &__info-desc {
+    }
+
+    &__info-btn {
+    }
+}
+.btn {
+
+    &_primary {
+    }
+
+    &__left {
+    }
+
+    &__rigth {
+    }
+}
+.swiper {
+    width: 100%;   
+    height: 692px;
+
+    &__container {
+    }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+background-color: wheat;
+}
+.swiper-pagination {
+}
+.swiper-arrow-prev {
+    rotate: 180deg;
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+.swiper-controls {
+    display: flex;
+    justify-content: space-between;
+
+    &__pagination {
+        display: flex;
+        gap: 10px;
+    }
+}
+.slider-controls {
+
+    &__count {
+    }
+}
+.controls {
+
+    &__pagination-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: clamp(2.75rem, 0.125rem + 2.92vw, 3.625rem);
+        width: clamp(2.75rem, 0.125rem + 2.92vw, 3.625rem);
+        border: 2px solid var(--c-border);
+        border-radius: 50%;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}

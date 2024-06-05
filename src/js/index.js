@@ -6,3 +6,7 @@ banner();
 
 import footer from './modules/footer.js';
 footer()
+
+import feature from './modules/feature.js';
+feature()
+
